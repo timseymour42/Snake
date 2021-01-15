@@ -1,12 +1,31 @@
 public class Cell {
 
-  private final boolean nothing;
+  private boolean isSnake;
+  private boolean isFood;
 
-  public Cell(boolean nothing) {
-    this.nothing = nothing;
+  public Cell(boolean isSnake, boolean isFood) {
+    this.isSnake = isSnake;
+    this.isFood = isFood;
   }
 
-  //frickin bruh
-}
+  // for building default board
+  public Cell() {
+    this.isSnake = false;
+    this.isFood = false;
+  }
 
-// jjdjjdjb
+
+  public void becomesSnake() {
+    this.isSnake = !this.isSnake;
+
+  }
+
+  public void becomesFood() {
+    this.isFood = !this.isFood;
+  }
+
+  public boolean getIsSnake() {
+    return this.isSnake;
+  }
+
+}
