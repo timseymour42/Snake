@@ -5,6 +5,8 @@ public class Cell {
   public Cell(boolean nothing) {
     this.nothing = nothing;
   }
+
+  //frickin bruh
 }
 
 // jjdjjdjb
