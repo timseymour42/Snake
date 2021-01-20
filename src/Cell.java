@@ -1,31 +1,21 @@
+// Position on the game board
 public class Cell {
 
-  private boolean isSnake;
-  private boolean isFood;
+  private int row;
+  private int col;
 
-  public Cell(boolean isSnake, boolean isFood) {
-    this.isSnake = isSnake;
-    this.isFood = isFood;
+  public Cell(int row, int col) {
+    this.row = row;
+    this.col = col;
   }
 
-  // for building default board
-  public Cell() {
-    this.isSnake = false;
-    this.isFood = false;
+  public int getRow() {
+    return this.row;
   }
 
-
-  public void becomesSnake() {
-    this.isSnake = !this.isSnake;
-
+  public int getCol() {
+    return this.col;
   }
 
-  public void becomesFood() {
-    this.isFood = !this.isFood;
-  }
-
-  public boolean getIsSnake() {
-    return this.isSnake;
-  }
 
 }
